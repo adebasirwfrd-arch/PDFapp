@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PDFApps</string>
+    <string name="app_subtitle">PDF Editor</string>
+    <string name="app_ready">Ready</string>
+
+    <string name="nav_group_organize">Organize</string>
+    <string name="nav_group_transform">Transform</string>
+    <string name="nav_group_security">Security</string>
+    <string name="nav_group_convert">Convert</string>
+    <string name="nav_group_annotate">Annotate</string>
+    <string name="nav_group_inspect">Inspect</string>
+    <string name="nav_search">Search tools…</string>
+
+    <string name="nav_split">Split</string>
+    <string name="nav_merge">Merge</string>
+    <string name="nav_reorder">Reorder</string>
+    <string name="nav_extract">Extract</string>
+    <string name="nav_rotate">Rotate</string>
+    <string name="nav_compress">Compress</string>
+    <string name="nav_page_numbers">Page numbers</string>
+    <string name="nav_nup">N-up</string>
+    <string name="nav_encrypt">Encrypt</string>
+    <string name="nav_watermark">Watermark</string>
+    <string name="nav_ocr">OCR</string>
+    <string name="nav_convert">Convert</string>
+    <string name="nav_import">Import</string>
+    <string name="nav_edit">Edit</string>
+    <string name="nav_info">Info</string>
+
+    <string name="viewer_open_pdf">Open PDF</string>
+    <string name="viewer_no_document">No PDF open</string>
+    <string name="tool_coming_soon">Full parity with desktop — implementation in progress</string>
+    <string name="mac_unaffected">Mac desktop app at /Applications/PDFApps.app is unchanged</string>
+</resources>
