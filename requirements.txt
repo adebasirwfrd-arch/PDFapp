@@ -1,0 +1,18 @@
+PySide6>=6.11.1
+pypdf>=6.13.0
+cryptography>=48.0.0
+qtawesome>=1.4.1
+pillow>=12.1.1
+pymupdf>=1.27.2.3
+pytesseract>=0.3.13
+python-docx>=1.2.0
+python-pptx>=1.0.2
+openpyxl>=3.1.5
+beautifulsoup4>=4.14.3
+ebooklib>=0.20
+# Transitive of python-docx, python-pptx, ebooklib, pikepdf.
+# Pin to >=6.1.0 to fix PYSEC-2026-87 (XXE — lxml < 6.1.0 resolves
+# external entities by default, allowing crafted DOCX/PPTX/EPUB/PDF-XMP
+# files to read arbitrary local files).
+lxml>=6.1.0
+pyinstaller>=6.20.0

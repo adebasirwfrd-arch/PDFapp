@@ -1,0 +1,28 @@
+pkgbase = pdfapps
+	pkgdesc = Fast, offline, subscription-free PDF editor with 13 built-in tools
+	pkgver = 1.13.9
+	pkgrel = 1
+	url = https://nelsonduarte.github.io/PDFApps/
+	arch = any
+	license = MIT
+	depends = python>=3.10
+	depends = pyside6
+	depends = python-pypdf
+	depends = python-pymupdf
+	depends = python-pillow
+	depends = python-pytesseract
+	depends = python-docx
+	depends = python-qtawesome
+	depends = python-cryptography
+	depends = hicolor-icon-theme
+	optdepends = tesseract: OCR text recognition
+	optdepends = tesseract-data-eng: English OCR
+	optdepends = tesseract-data-por: Portuguese OCR
+	optdepends = tesseract-data-spa: Spanish OCR
+	optdepends = tesseract-data-fra: French OCR
+	optdepends = tesseract-data-deu: German OCR
+	optdepends = ghostscript: advanced PDF compression
+	source = pdfapps-1.13.9.tar.gz::https://github.com/nelsonduarte/PDFApps/archive/refs/tags/v1.13.9.tar.gz
+	sha256sums = 54db29942c1bba910bd0aee8578bdf9feeddf0944fe0dcb9904a7e5010329e36
+
+pkgname = pdfapps

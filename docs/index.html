@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDFApps — Fast, offline, subscription-free PDF editor</title>
+    <meta name="description" content="The PDF editor that respects your privacy. 15 built-in tools, runs offline, free forever, open source. Windows, macOS, and Linux.">
+    <link rel="canonical" href="https://pdf-apps.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="PDFApps">
+    <meta property="og:url" content="https://pdf-apps.com/">
+    <meta property="og:title" content="PDFApps — Fast, offline, subscription-free PDF editor">
+    <meta property="og:description" content="The PDF editor that respects your privacy. 15 built-in tools, runs offline, free forever, open source. Windows, macOS, and Linux.">
+    <meta property="og:image" content="https://pdf-apps.com/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PDFApps — Fast, offline, subscription-free PDF editor">
+    <meta name="twitter:description" content="The PDF editor that respects your privacy. 15 built-in tools, runs offline, free forever, open source.">
+    <meta name="twitter:image" content="https://pdf-apps.com/og-image.png">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "PDFApps",
+      "operatingSystem": "Windows, macOS, Linux",
+      "applicationCategory": "BusinessApplication",
+      "description": "The PDF editor that respects your privacy. 15 built-in tools, runs offline, free forever, open source.",
+      "url": "https://pdf-apps.com/",
+      "downloadUrl": "https://pdf-apps.com/download.html",
+      "installUrl": "https://apps.microsoft.com/detail/9P70QGR8BSMZ",
+      "license": "https://github.com/nelsonduarte/PDFApps/blob/main/LICENSE",
+      "softwareVersion": "1.13.10",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Nelson Duarte"
+      }
+    }
+    </script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"></noscript>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:9999;padding:8px 16px;background:#10a597;color:#fff;text-decoration:none;font-weight:700;border-radius:0 0 6px 0;" onfocus="this.style.cssText='position:fixed;left:0;top:0;z-index:9999;padding:8px 16px;background:#10a597;color:#fff;text-decoration:none;font-weight:700;border-radius:0 0 6px 0;'" onblur="this.style.cssText='position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;'">Skip to main content</a>
+
+<header class="site-header">
+    <div class="container">
+        <a href="index.html" class="brand">
+            <img src="icon.png" alt="" width="28" height="28">
+            PDFApps
+        </a>
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        <nav aria-label="Main navigation">
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="download.html">Download</a></li>
+            <li><a href="docs.html">Docs</a></li>
+            <li><a href="changelog.html">Changelog</a></li>
+        </ul>
+        </nav>
+        <div class="nav-actions">
+            <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme"></button>
+            <a href="https://github.com/nelsonduarte/PDFApps" class="icon-btn" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+            <a href="download.html" class="btn btn-primary btn-sm">Download</a>
+        </div>
+    </div>
+</header>
+
+<main id="main">
+<section class="hero">
+    <div class="container">
+        <span class="eyebrow">v1.13.10 · MIT licensed · Open source</span>
+        <h1>The PDF editor that<br>respects your <span class="gradient-text">privacy</span></h1>
+        <p class="hero-tagline">15 powerful tools in one app. 100% offline, free forever, no accounts. Your files never leave your computer.</p>
+
+        <div class="hero-cta">
+            <a id="hero-download" href="download.html" class="btn btn-primary btn-lg">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Download for free
+            </a>
+            <a href="features.html" class="btn btn-secondary btn-lg">Explore features</a>
+        </div>
+
+        <div class="hero-meta">
+            <a href="https://github.com/nelsonduarte/PDFApps" class="hero-meta-item" style="text-decoration:none;color:inherit;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <img src="https://img.shields.io/github/stars/nelsonduarte/PDFApps?style=flat&label=Stars&color=f59e0b" alt="GitHub Stars" width="72" height="20" style="height:20px;vertical-align:middle;">
+            </a>
+            <span class="hero-meta-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                Windows · macOS · Linux
+            </span>
+            <span class="hero-meta-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                No telemetry
+            </span>
+            <span class="hero-meta-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                No accounts
+            </span>
+        </div>
+
+    </div>
+</section>
+
+<section class="stats reveal">
+    <div class="container">
+        <div class="stats-grid">
+            <div>
+                <div class="stat-value">15</div>
+                <div class="stat-label">PDF Tools</div>
+            </div>
+            <div>
+                <div class="stat-value">8</div>
+                <div class="stat-label">Languages</div>
+            </div>
+            <div>
+                <div class="stat-value">6</div>
+                <div class="stat-label">Platforms</div>
+            </div>
+            <div>
+                <div class="stat-value">$0</div>
+                <div class="stat-label">Forever</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="section-header">
+            <span class="eyebrow">Why PDFApps</span>
+            <h2>Built for people who care</h2>
+            <p>Most PDF tools are paid, browser-based, or want your data. PDFApps is different.</p>
+        </div>
+
+        <div class="why-grid">
+            <div class="why-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                </div>
+                <h3>100% offline</h3>
+                <p>Files never leave your computer. No uploads, no cloud, no tracking.</p>
+            </div>
+            <div class="why-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                </div>
+                <h3>Free forever</h3>
+                <p>Open source, MIT licensed. No subscriptions, no upsells, no trials.</p>
+            </div>
+            <div class="why-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                </div>
+                <h3>Cross-platform</h3>
+                <p>Native on Windows, macOS, and Linux. Same experience everywhere.</p>
+            </div>
+            <div class="why-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="13 17 18 12 13 7"/><polyline points="6 17 11 12 6 7"/></svg>
+                </div>
+                <h3>All in one</h3>
+                <p>15 tools in a single app. No more juggling 5 different websites.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="section-header">
+            <span class="eyebrow">Featured tools</span>
+            <h2>Everything you need for PDFs</h2>
+            <p>From basic operations to a visual editor with signatures and annotations.</p>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg>
+                </div>
+                <h3>Split &amp; Merge</h3>
+                <p>Split a PDF by page ranges or merge multiple files with drag-and-drop ordering.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+                </div>
+                <h3>Compress</h3>
+                <p>Three quality levels using Ghostscript and PyMuPDF for the smallest output size.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                </div>
+                <h3>Encrypt</h3>
+                <p>Protect PDFs with a password or remove encryption from existing documents.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                </div>
+                <h3>OCR</h3>
+                <p>Extract text from scanned PDFs in 5 languages using Tesseract.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+                </div>
+                <h3>Visual Editor</h3>
+                <p>Redact, annotate, sign, highlight, and edit text directly on the PDF.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                </div>
+                <h3>Convert</h3>
+                <p>Export to PNG, JPG, DOCX, TXT, PPTX, XLSX, HTML, or EPUB.</p>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 48px;">
+            <a href="features.html" class="btn btn-secondary">See all 15 tools →</a>
+        </div>
+    </div>
+</section>
+
+<section class="platforms reveal">
+    <div class="container">
+        <div class="section-header">
+            <span class="eyebrow">Available everywhere</span>
+            <h2>Install on any platform</h2>
+            <p>Native installers, package managers, and a portable AppImage.</p>
+        </div>
+
+        <div class="platforms-grid">
+            <a href="download.html" class="platform-item">
+                <img src="icons/windows.svg" alt="" width="40" height="40">
+                <span>Windows</span>
+            </a>
+            <a href="download.html" class="platform-item">
+                <img src="icons/apple.svg" alt="" width="40" height="40">
+                <span>macOS</span>
+            </a>
+            <a href="download.html" class="platform-item">
+                <img src="icons/ubuntu.svg" alt="" width="40" height="40">
+                <span>Ubuntu</span>
+            </a>
+            <a href="download.html" class="platform-item">
+                <img src="icons/fedora.svg" alt="" width="40" height="40">
+                <span>Fedora</span>
+            </a>
+            <a href="download.html" class="platform-item">
+                <img src="icons/archlinux.svg" alt="" width="40" height="40">
+                <span>Arch</span>
+            </a>
+            <a href="download.html" class="platform-item">
+                <img src="icons/appimage.svg" alt="" width="40" height="40">
+                <span>AppImage</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-box">
+            <h2>Ready to ditch the cloud?</h2>
+            <p>Download PDFApps and get 15 PDF tools running locally on your machine in less than a minute.</p>
+            <a href="download.html" class="btn btn-primary btn-lg">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Download for free
+            </a>
+        </div>
+    </div>
+</section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="brand"><img src="icon.png" alt="" width="28" height="28">PDFApps</a>
+                <p>Fast, offline, subscription-free PDF editor. Open source under the MIT license.</p>
+            </div>
+            <div class="footer-col">
+                <p class="footer-heading">Product</p>
+                <ul>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="download.html">Download</a></li>
+                    <li><a href="changelog.html">Changelog</a></li>
+                    <li><a href="docs.html">Documentation</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <p class="footer-heading">Resources</p>
+                <ul>
+                    <li><a href="https://github.com/nelsonduarte/PDFApps/blob/main/CONTRIBUTING.md">Contributing</a></li>
+                    <li><a href="https://github.com/nelsonduarte/PDFApps/issues">Issues</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <p class="footer-heading">Community</p>
+                <ul>
+                    <li><a href="https://github.com/nelsonduarte/PDFApps">GitHub</a></li>
+                    <li><a href="https://github.com/sponsors/nelsonduarte">Sponsor</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <p class="footer-heading">Legal</p>
+                <ul>
+                    <li><a href="https://github.com/nelsonduarte/PDFApps/blob/main/LICENSE">MIT License</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 Nelson Duarte · Made with ♥ for the open web</span>
+            <div class="footer-bottom-links">
+                <a href="https://github.com/nelsonduarte/PDFApps">GitHub</a>
+                <a href="changelog.html">v1.13.10</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
