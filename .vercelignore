@@ -1,0 +1,12 @@
+# Desktop app — not deployed to Vercel (static docs only)
+requirements.txt
+pdfapps.py
+installer.py
+uninstaller.py
+app/
+tests/
+venv/
+.venv/
+*.spec
+*.py
+!docs/**
