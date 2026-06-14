@@ -15,4 +15,4 @@ ebooklib>=0.20
 # external entities by default, allowing crafted DOCX/PPTX/EPUB/PDF-XMP
 # files to read arbitrary local files).
 lxml>=6.1.0
-pyinstaller>=6.20.0
+pyinstaller>=6.21.0
